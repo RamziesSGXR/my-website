@@ -4,25 +4,40 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Global styles */
 
+/* Global styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
+    background-image: linear-gradient(to right, #f4f4f4, #d9d9d9);
 }
 
 header {
-    background: #f4f4f4;
+    background-color: #1f3d49;
     padding: 20px;
+    text-align: center;
 }
 
 h1 {
-    color: #333;
+    color: #f4f4f4;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 3px #2c3e50;
 }
 
+h2 {
+    color: #f4f4f4;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 3px #2c3e50;
+}
+
+
 nav {
-    background: #333;
-    padding: 15px;
+    background-image: linear-gradient(45deg,#00f2fe 5%, #2980b9 20%, #00f2fe 60% );
+    padding: 15px 10%;
+    text-align: left;
+    margin-bottom: 20px;
+        display: flex;
+    justify-content: space-evenly;
 }
 
 nav ul {
@@ -40,14 +55,19 @@ nav ul li a {
 }
 
 main {
+    text-shadow: 1px 1px 3px #afb9c2;
     padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(45deg, #051422, #00f2fe);
 }
 
+
 footer {
-    background: #333;
+    background-image: linear-gradient(45deg,#00f2fe 20%, #2980b9 40%, #00f2fe 60% );
     color: #f4f4f4;
     text-align: center;
     padding: 20px;
+    margin-top: 20px;
 }
 
 /* Responsive design */
@@ -58,10 +78,117 @@ footer {
 }
 
 /* picture style */
-#p-picture {
-    width: 150px;
-    height: 150px;
+#maincenter-image {
+    width: 500px;
+    height: 300px;
     object-fit: cover;
-    border-radius: 50%;
-    margin: 20px 0;
+    border-radius: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
+
+/* START BUTTON */
+.start-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.start-adventure {
+    display: inline-block;
+    background-color: #2980b9;
+    color: #f4f4f4;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.start-adventure:hover {
+    background-color: #3498db;
+}
+
+/* Navigation buttons */
+.nav-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.nav-button {
+    background-color: #2980b9;
+    color: #f4f4f4;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.nav-button:hover {
+    background-color: #3498db;
+}
+
+#back-button {
+    float: left;
+}
+
+/* Page link buttons */
+.page-link {
+    background-color: #2980b9;
+    color: #f4f4f4;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.page-link:hover {
+    background-color: #3498db;
+}
+
+/* Choice buttons */
+.choice {
+    background-color: #2980b9;
+    color: #f4f4f4;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    }
+    
+    #wealth {
+    background-color: #e74c3c;
+    }
+    
+    #knowledge {
+    background-color: #f1c40f;
+    }
+    
+    #adventure {
+    background-color: #2ecc71;
+    }
+    
+    .choice:hover {
+    opacity: 0.8;
+    }
+    
+    /* Credits page 2-column layout */
+    .credits-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    }
+    
+    .credits-column {
+    flex: 1;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    }
+    
+    @media screen and (max-width: 768px) {
+    .credits-column {
+    flex-basis: 100%;
+    }
+    }
