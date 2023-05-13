@@ -1,39 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- This HTML document serves as the Credits page for the site -->
 <head>
+    <!-- Metadata for the document -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the external CSS stylesheet -->
     <link rel="stylesheet" href="../styles.css">
+    <!-- Title of the page -->
     <title>Credits</title>
 </head>
 <body>
+    <!-- The header contains the main title of the page -->
     <header>
         <h1>Credits and Pages</h1>
     </header>
+    <!-- The navigation bar with links to other pages of the site -->
     <nav>
+        <!-- Link to the Home page -->
         <a href="/index.html">Home</a>
+        <!-- Link to the Credits page -->
         <a href="credits.html">Credits</a>
+        <!-- Link to the footer of the page -->
+        <a href="#footer">Footer</a>
     </nav>
+    <!-- Main content of the page -->
     <main>
+        <!-- A section containing two columns of information -->
         <section class="credits-container">
+            <!-- First column containing links to the story pages -->
             <div class="credits-column">
                 <h2>Story Pages</h2>
-                <a class="page-link" href="story1.html">Story pg1</a>
-                <a class="page-link" href="story2.html">Story pg2</a>
-                <a class="page-link" href="story3.html">Story pg3</a>
-                <a class="page-link" href="story4a.html">Story pg4</a>
-                <a class="page-link" href="story4b.html">Story pg5</a>
-                <a class="page-link" href="story4c.html">Story pg6</a>
-            </div>
+                <ul class="story-pages">
+                    <li><a class="page-link" href="story1.html">Story pg1</a></li>
+                    <li><a class="page-link" href="story2.html">Story pg2</a></li>
+                    <li><a class="page-link" href="story3.html">Story pg3</a></li>
+                    <li><a class="page-link" href="story4a.html">Story pg4</a></li>
+                    <li><a class="page-link" href="story4b.html">Story pg5</a></li>
+                    <li><a class="page-link" href="story4c.html">Story pg6</a></li>
+                </ul>
+            </div>            
+            <!-- Second column containing credits -->
             <div class="credits-column">
                 <h2>Credits</h2>
+                <!-- Credit information -->
                 <p>Story Author: Robert Troumbley</p>
                 <p>Website Design: Robert Troumbley</p>
                 <p>Illustrations: Dalle-2</p>
+                <!-- Link to Robert's portfolio site -->
+                <p><a href="https://www.troumbley.com/" target="_blank">Robert's Portfolio site</a></p>
             </div>
         </section>
     </main>
-    <footer>
+    <!-- Footer of the page, with an id for navigation -->
+    <footer id="footer">
         <p>&copy; Robert Troumbley - Interactive Story</p>
     </footer>
 </body>

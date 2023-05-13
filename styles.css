@@ -1,45 +1,40 @@
-/* Reset browser styles */
+/* Reset browser styles and apply box-sizing globally */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Global styles */
+/* Global style for the body element */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Georgia', serif;
     line-height: 1.6;
     background-image: linear-gradient(to right, #f4f4f4, #d9d9d9);
 }
 
+/* Styles for the header, h1, h2, and navigation elements */
 header {
     background-color: #1f3d49;
     padding: 20px;
     text-align: center;
 }
 
-h1 {
+h1, h2 {
     color: #f4f4f4;
     margin-bottom: 10px;
     text-shadow: 2px 2px 3px #2c3e50;
 }
-
-h2 {
-    color: #f4f4f4;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 3px #2c3e50;
-}
-
 
 nav {
     background-image: linear-gradient(45deg,#00f2fe 5%, #2980b9 20%, #00f2fe 60% );
     padding: 15px 10%;
     text-align: left;
     margin-bottom: 20px;
-        display: flex;
+    display: flex;
     justify-content: space-evenly;
 }
 
+/* Styles for the navigation list */
 nav ul {
     list-style-type: none;
 }
@@ -54,13 +49,13 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Styles for the main section and footer */
 main {
     text-shadow: 1px 1px 3px #afb9c2;
     padding: 20px;
     text-align: center;
     background-image: linear-gradient(45deg, #051422, #00f2fe);
 }
-
 
 footer {
     background-image: linear-gradient(45deg,#00f2fe 20%, #2980b9 40%, #00f2fe 60% );
@@ -70,14 +65,14 @@ footer {
     margin-top: 20px;
 }
 
-/* Responsive design */
+/* Responsive design for navigation font size */
 @media screen and (max-width: 768px) {
     nav {
         font-size: 0.9rem;
     }
 }
 
-/* picture style */
+/* Styles for the main image and start button */
 #maincenter-image {
     width: 500px;
     height: 300px;
@@ -89,7 +84,6 @@ footer {
     margin-bottom: 20px;
 }
 
-/* START BUTTON */
 .start-button {
     text-align: center;
     margin-top: 20px;
@@ -108,7 +102,23 @@ footer {
     background-color: #3498db;
 }
 
-/* Navigation buttons */
+/* CSS for the disclaimer */
+.disclaimer {
+    background-image: repeating-linear-gradient(
+      45deg,
+      #e6cf04,
+      #e6cf04 10px,
+      #ffffff 10px,
+      #ffffff 20px
+    );
+    color: red;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;  
+    text-shadow: 2px 2px 4px #ccda0b;  
+}
+
+/* Styles for the navigation buttons, page links, choice buttons, and credits page layout */
 .nav-buttons {
     display: flex;
     justify-content: space-evenly;
@@ -131,7 +141,6 @@ footer {
     float: left;
 }
 
-/* Page link buttons */
 .page-link {
     background-color: #2980b9;
     color: #f4f4f4;
@@ -146,7 +155,6 @@ footer {
     background-color: #3498db;
 }
 
-/* Choice buttons */
 .choice {
     background-color: #2980b9;
     color: #f4f4f4;
@@ -155,40 +163,86 @@ footer {
     border-radius: 5px;
     display: inline-block;
     margin: 5px;
-    }
-    
-    #wealth {
+}
+
+#wealth {
     background-color: #e74c3c;
-    }
-    
-    #knowledge {
+}
+
+#knowledge {
     background-color: #f1c40f;
-    }
-    
-    #adventure {
+}
+
+#adventure {
     background-color: #2ecc71;
-    }
-    
-    .choice:hover {
+}
+
+.choice:hover {
     opacity: 0.8;
-    }
-    
-    /* Credits page 2-column layout */
-    .credits-container {
+}
+
+.credits-container {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 20px;
-    }
-    
-    .credits-column {
+}
+
+.credits-column {
     flex: 1;
     padding: 0 10px;
     margin-bottom: 20px;
+}
+
+.story-pages {
+    list-style-type: none; /* remove default bullets */
+    padding: 0; /* remove default padding */
+}
+
+.story-pages li {
+    padding: 5px 0; /* add vertical padding for each item */
+}
+
+/* Responsive design for navigation font size and layout */
+@media screen and (max-width: 768px) {
+    nav {
+        font-size: 0.9rem;
+        flex-direction: column;
+        align-items: center;
     }
-    
-    @media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Responsive design for the main image */
+@media screen and (max-width: 768px) {
+    #maincenter-image {
+        width: 90%;
+        margin-top: 20px;
+    }
+}
+
+/* Responsive design for navigation buttons */
+@media screen and (max-width: 768px) {
+    .nav-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-button {
+        margin-bottom: 10px;
+    }
+}
+
+/* Responsive design for the credits page */
+@media screen and (max-width: 768px) {
+    .credits-container {
+        flex-direction: column;
+        align-items: center;
+    }
     .credits-column {
-    flex-basis: 100%;
+        flex-basis: 100%;
+        text-align: center;
     }
-    }
+}
