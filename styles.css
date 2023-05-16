@@ -155,15 +155,29 @@ footer {
     background-color: #3498db;
 }
 
+.story-pages {
+     /* Use grid display for more control over layout */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    justify-items: center; /* to center the choices in their respective grid cells */
+    list-style-type: none; /* remove default bullets */
+    padding: 0; /* remove default padding */
+}
+
+.story-pages li {
+    padding: 5px 0; /* add vertical padding for each item */
+}
+
 .choice {
     background-color: #2980b9;
     color: #f4f4f4;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    display: inline-block;
-    margin: 5px;
+    /* Removed display: inline-block; and margin: 5px; */
 }
+
 
 #wealth {
     background-color: #e74c3c;
