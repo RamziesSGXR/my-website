@@ -3,11 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Tsukimi Rounded', sans-serif; /* Apply the font globally */
 }
 
 /* Global style for the body element */
 body {
-    font-family: 'Georgia', serif;
     line-height: 1.6;
     background-image: linear-gradient(to right, #f4f4f4, #d9d9d9);
 }
