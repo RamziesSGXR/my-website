@@ -4,6 +4,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Tsukimi Rounded', sans-serif; /* Apply the font globally */
+    color:#f4f4f4;
+    ;
 }
 
 /* Global style for the body element */

@@ -1,0 +1,21 @@
+PEER RESPONSES
+
+Hassan Sherafatmand
+
+"When I saw your code, I realized that your idea about the page is unique, conversely,
+ I saw something in your CSS file that you have 3 viewport with the same screen size
+ " @media screen and (max-width: 768px)",
+ I am wondering if you could merge them in one, but I don't know what is your plan was."
+
+This ^ was done so I could tell if I had the Main image, Navagation buttons, and credits page all worked.
+Since these three elements acted differanty. I wanted to call them out. 
+
+----Looks like I need to do the fallabck---
+(Web Project Requirements) 
+You might not have feedback from your peers if you did not turn in your assignments on time or if a peer that was assigned to review your website did not complete their review. 
+If you don't have any or enough feedback from peers, for whatever reason, 
+make your own assessment of your website (based on what we learned in Ch 16) and make & document those improvements.
+
+*added favicon*
+*removed footer link that didn't fit with the size atm in credit page*
+*updated text color to be more readable*
